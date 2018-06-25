@@ -1,6 +1,6 @@
 {
-  "id": "1b1e3b29-38c5-4ee5-8ddf-da4cba27964b",
-  "name": "CloudFoundryCLI",
+  "id": "3f497b56-a713-4b84-9b9d-ad435c004c6b",
+  "name": "CloudFoundryCLIGeert",
   "friendlyName": "ms-resource:loc.friendlyName",
   "description": "ms-resource:loc.description",
   "helpMarkDown": "ms-resource:loc.helpMarkDown",
@@ -9,11 +9,11 @@
     "Build",
     "Release"
   ],
-  "author": "Microsoft",
+  "author": "geertvdc",
   "demands": [],
   "version": {
-    "Major": 0,
-    "Minor": 136,
+    "Major": 1,
+    "Minor": 0,
     "Patch": 0
   },
   "groups": [
@@ -26,6 +26,11 @@
       "name": "advanced",
       "displayName": "ms-resource:loc.group.displayName.advanced",
       "isExpanded": false
+    },
+    {
+      "name": "OutputVariables",
+      "displayName": "ms-resource:loc.group.displayName.OutputVariables",
+      "isExpanded": true
     }
   ],
   "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
@@ -117,6 +122,15 @@
       "required": false,
       "helpMarkDown": "ms-resource:loc.input.help.cfToolLocation",
       "groupName": "advanced"
+    },
+    {
+      "name": "cfExecOutput",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.cfExecOutput",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.cfExecOutput",
+      "groupName": "OutputVariables"
     }
   ],
   "execution": {

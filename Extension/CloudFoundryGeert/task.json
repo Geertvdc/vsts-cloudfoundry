@@ -1,7 +1,7 @@
 {
-    "id": "a0fdb0cf-30d7-4ab8-8869-fa3d0ff0a6d7",
-    "name": "CloudFoundry",
-    "friendlyName": "Cloud Foundry",
+    "id": "80316f27-9ec9-4708-8674-90bc47afbca6",
+    "name": "CloudFoundryGeert",
+    "friendlyName": "Cloud Foundry Geert",
     "description": "Push your applications to Cloud Foundry",
     "helpMarkDown": "",
     "category": "Deploy",

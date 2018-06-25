@@ -63,7 +63,7 @@ gulp.task('compileTasks', ['clean'], function (cb) {
 });
 
 gulp.task('copyMdFiles', function(cb) {
-    return gulp.src(path.join(__dirName, '*.md'))
+    return gulp.src(path.join(__dirname, '*.md'))
     .pipe(gulp.dest(path.join(__dirname)));
 })
 

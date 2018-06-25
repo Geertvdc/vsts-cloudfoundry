@@ -1,11 +1,11 @@
 {
     "manifestVersion": 1,
-    "id": "cloud-foundry-build-extension",
-    "name": "Cloud Foundry",
-    "version": "1.136.0",
-    "publisher": "ms-vsts",
+    "id": "cloud-foundry-build-extensionGeert",
+    "name": "Cloud Foundry - geert",
+    "version": "1.1",
+    "publisher": "geertvdcruijsen",
     "description": "Cloud Foundry build extension to push applications to a Cloud Foundry instance.",
-    "public": true,
+    "public": false,
     "categories": [
         "Build and release"
     ],
@@ -34,10 +34,10 @@
     },
     "files": [
         {
-            "path": "CloudFoundry"
+            "path": "CloudFoundryGeert"
         },
         {
-            "path": "CloudFoundryCLI"
+            "path": "CloudFoundryCLIGeert"
         },
         {
             "path": "images",
@@ -46,23 +46,23 @@
     ],
     "contributions": [
         {
-            "id": "cloud-foundry-task",
+            "id": "cloud-foundry-taskGeert",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "CloudFoundry"
+                "name": "CloudFoundryGeert"
             }
         },
         {
-            "id": "cloud-foundry-cli-task",
+            "id": "cloud-foundry-cli-taskGeert",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "CloudFoundryCLI"
+                "name": "CloudFoundryCLIGeert"
             }
         }
     ]

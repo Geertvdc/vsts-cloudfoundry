@@ -1,7 +1,7 @@
 {
-    "id": "1b1e3b29-38c5-4ee5-8ddf-da4cba27964b",
-    "name": "CloudFoundryCLI",
-    "friendlyName": "Cloud Foundry CLI",
+    "id": "3f497b56-a713-4b84-9b9d-ad435c004c6b",
+    "name": "CloudFoundryCLIGeert",
+    "friendlyName": "Cloud Foundry CLI - Geert",
     "description": "Run a command using the Cloud Foundry command line interface.",
     "helpMarkDown": "",
     "category": "Utility",
@@ -9,11 +9,11 @@
         "Build",
         "Release"
     ],
-    "author": "Microsoft",
+    "author": "geertvdc",
     "demands": [],
     "version": {
-        "Major": 0,
-        "Minor": 136,
+        "Major": 1,
+        "Minor": 0,
         "Patch": 0
     },
     "groups": [
@@ -26,6 +26,11 @@
           "name": "advanced",
           "displayName": "Advanced",
           "isExpanded": false
+        },
+        {
+          "name": "OutputVariables",
+          "displayName": "Output Variables",
+          "isExpanded": true
         }
     ],
     "instanceNameFormat": "cf $(cfCommand)",
@@ -117,6 +122,15 @@
         "required": false,
         "helpMarkDown": "Optionally specify the location to the cf CLI. If location is not specified, cf CLI needs to be in the PATH.",
         "groupName": "advanced"
+      },
+      {
+        "name": "cfExecOutput",
+        "type": "string",
+        "label": "Output of Cloud Foundry CLI Command",
+        "defaultValue": "",
+        "required": false,
+        "helpMarkDown": "Output of the Cloud Foundry CLI command",
+        "groupName": "OutputVariables"
       }
     ],
     "execution": {
