@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "cloud-foundry-build-extensionGeert",
     "name": "Cloud Foundry - geert",
-    "version": "1.1",
+    "version": "2.2",
     "publisher": "geertvdcruijsen",
     "description": "Cloud Foundry build extension to push applications to a Cloud Foundry instance.",
     "public": false,

@@ -12,7 +12,7 @@
     "author": "geertvdc",
     "demands": [],
     "version": {
-        "Major": 1,
+        "Major": 3,
         "Minor": 0,
         "Patch": 0
     },
@@ -26,11 +26,6 @@
           "name": "advanced",
           "displayName": "Advanced",
           "isExpanded": false
-        },
-        {
-          "name": "OutputVariables",
-          "displayName": "Output Variables",
-          "isExpanded": true
         }
     ],
     "instanceNameFormat": "cf $(cfCommand)",
@@ -122,15 +117,12 @@
         "required": false,
         "helpMarkDown": "Optionally specify the location to the cf CLI. If location is not specified, cf CLI needs to be in the PATH.",
         "groupName": "advanced"
-      },
+      }
+    ],
+    "OutputVariables":[
       {
-        "name": "cfExecOutput",
-        "type": "string",
-        "label": "Output of Cloud Foundry CLI Command",
-        "defaultValue": "",
-        "required": false,
-        "helpMarkDown": "Output of the Cloud Foundry CLI command",
-        "groupName": "OutputVariables"
+        "name": "CfCliOutput",
+        "description": "Output of Cloud Foundry CLI Command"
       }
     ],
     "execution": {

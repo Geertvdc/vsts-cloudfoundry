@@ -17,7 +17,6 @@ if (tl.filePathSupplied('cfToolLocation')) {
     tl.debug('Using supplied tool location');
     cfPath = tl.getPathInput('cfToolLocation');
 }
-var cfOutput = tl.getInput('cfExecOutput',false);
 
 //login using cf CLI login
 function loginToCF() {
@@ -73,7 +72,7 @@ if (!cfPath) {
                 tl.setResult(tl.TaskResult.Failed, '' + cfResult.error);
             }
             else{
-                tl.setVariable(cfOutput, cfResult.stdout, false);
+                tl.setVariable("CfCliOutput", cfResult.stdout, false);
                 tl.setResult(tl.TaskResult.Succeeded, "")
             }
         })
